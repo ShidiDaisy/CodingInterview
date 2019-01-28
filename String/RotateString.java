@@ -11,12 +11,12 @@ offset=1 => "gabcdef"
 offset=2 => "fgabcde"
 offset=3 => "efgabcd"
 
-Sol: 三步反转法
+Sol: 涓夋鍙嶈浆娉�
 offset=2 
 1. Split the string into two parts by offset: abcde, fg
 2. Reverse the first part: edcba,
 3. Reverse the second part: gf
-4. Combine two part and reverse the entire string： edcbagf -> fgabcde
+4. Combine two part and reverse the entire string锛� edcbagf -> fgabcde
 */
 public class RotateString {
 
