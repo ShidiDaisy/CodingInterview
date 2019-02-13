@@ -1,54 +1,44 @@
 package Linkedlist;
+/*Detect the cycle in a linkedlist
+ * Use two pointers, which move through the sequence at different speeds. The idea is to move fast
+ * pointer twice as quickly as the slow pointer. The distance between them increases by 1 each step.
+ * If at some point they meet -> found a cycle
+ * else if we have reached the end of the list -> no cycle present*/
 
-import java.util.HashSet;
-import java.util.Set;
-
-/*Detect a cycle in LinkedList by using hashing
- * - Traverse the given LinkedList and insert each encountered node into a set. If current node is 
- * already inside the set, that means there is a cycle*/
-
-class Node{
-	int data;
-	Node nextNode;
-	Node(int data, Node nextNode){
-		this.data = data;
-		this.nextNode = nextNode;
-	}
-}
-
+//class Node defined in CycleDetectionByHashing.java
 public class FloydsCycleDetection {
-
 	public static void main(String[] args) {
 		int[] keys = {1, 2, 3, 4, 5};
 		Node head = null;
-		for(int i=keys.length-1; i>=0; i--){
+		for(int i=keys.length-1; i>=0; i--) {
 			head = new Node(keys[i], head);
 		}
 		
 		//insert cycle
-		head.nextNode.nextNode.nextNode.nextNode = head.nextNode.nextNode;
+		head.nextNode.nextNode.nextNode.nextNode.nextNode = head.nextNode.nextNode;
 		
-		if(detectCycle(head)){
-			System.out.println("Cycle detected");
-		}else{
-			System.out.println("No cycle detected");
+		if(floydsCycleDetection(head)) {
+			System.out.println("Cycle Found");
+		}else {
+			System.out.println("No Cycle Found");
 		}
-
 	}
-
-	private static boolean detectCycle(Node head) {
-		Node curr = head;
-		Set<Node> set = new HashSet<Node>();
+	
+	public static boolean floydsCycleDetection(Node head) {
+		Node slow = head;
+		Node fast = head;
 		
-		while(curr != null){
-			if(!set.contains(curr)){
-				set.add(curr.nextNode);
-				curr = curr.nextNode;
-			}else{
+		while(fast != null && fast.nextNode != null) {
+			slow = slow.nextNode;
+			fast = fast.nextNode.nextNode;
+			
+			//check if they meet
+			if(slow == fast) {
 				return true;
 			}
 		}
+		
 		return false;
+		
 	}
-
 }
