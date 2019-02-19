@@ -4,6 +4,9 @@
  2. [Flood Fill Algorithm](https://www.techiedelight.com/flood-fill-algorithm/)
  3. [Floyd's Cycle Detection/Detect Cycle in a LinkedList](https://www.techiedelight.com/detect-cycle-linked-list-floyds-cycle-detection-algorithm/)
 
- ## Math
-  
+## Sequence
+ 1. [Longest Increasing Subsequence using DP](https://www.techiedelight.com/longest-increasing-subsequence-using-dynamic-programming/) 
+
+## Math
+ 1. [Maximum Subarray Problem (Kadane's algorithm)](https://www.techiedelight.com/maximum-subarray-problem-kadanes-algorithm/) 
 
