@@ -1,12 +1,13 @@
+package Math;
 import java.util.Scanner;
 
 
-public class chaoYouAi {
+public class isPrime {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
-		chaoYouAi sol = new chaoYouAi();
+		isPrime sol = new isPrime();
 		System.out.println(sol.isPrime(num));
 	}
 	
