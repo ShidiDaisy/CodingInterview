@@ -1,4 +1,4 @@
-package Sequence;
+package DP;
 
 import java.util.ArrayList;
 import java.util.List;
