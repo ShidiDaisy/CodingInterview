@@ -12,7 +12,7 @@
  
 ## Tree
  1. [Inorder Tree Traversal](https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/)
-    * Start from leaf
+    * Start from leaf. recusively traverse leftsubtree, itself, right subtree
  
 ![Inorder Tree Traversal](https://i1.wp.com/www.techiedelight.com/wp-content/uploads/Inorder-Traversal.png?resize=344%2C437&ssl=1)
 
