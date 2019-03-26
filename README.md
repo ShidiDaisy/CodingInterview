@@ -23,7 +23,8 @@
 ![Preorder Tree Traversal](https://i2.wp.com/www.techiedelight.com/wp-content/uploads/Preorder-Traversal.png?resize=343%2C440&ssl=1)
 	
 3. [Postorder Tree Traversal](https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/)
-	* Start from leaf, recursively traverse its' left subtree then it's right subtree
+	* Start from leaf, recursively traverse its' left subtree then it's right subtree.
+	* Root will be the last node to visit.
 
 ![Postorder Tree Traversal](https://i2.wp.com/www.techiedelight.com/wp-content/uploads/Postorder-Traversal.png?resize=355%2C436&ssl=1)
 
