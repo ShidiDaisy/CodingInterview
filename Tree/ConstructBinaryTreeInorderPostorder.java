@@ -35,9 +35,9 @@ public class ConstructBinaryTreeInorderPostorder {
     Match the root in the inorder list. Recursively do the same to the left subtree and right subtree
 */
     public static void main(String[] args){
-        int[] inorder = {1, 2};
-        int[] postorder = {2, 1};
-        buildTree(inorder, postorder);
+        int[] inorder = {1, 2, 3};
+        int[] postorder = {1, 3, 2};
+        TreeNode root = buildTree(inorder, postorder);
         System.out.println("");
     }
 
@@ -61,8 +61,10 @@ public class ConstructBinaryTreeInorderPostorder {
         int position = findPosition(inorder, instart, inend, postorder[postend]);
 
         //traverse the left subtree and right subtree
-        root.left = myBuildTree(inorder, 0, position-1, postorder, 0, position-1);
-        root.right = myBuildTree(inorder, position+1, inend, postorder, position-1, postend);
+        //poistion-1-instart: length of sub tree
+        root.left = myBuildTree(inorder, instart, position-1, postorder, poststart, position-1-instart+poststart);
+
+        root.right = myBuildTree(inorder, position+1, inend, postorder, poststart+position-instart, postend-1);
         return root;
     }
 
