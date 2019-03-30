@@ -38,7 +38,7 @@ public class ConstructBinaryTreePreorderInorder {
 		
 		TreeNode root = new TreeNode(preorder[prestart]);
 		int rootPosition = findPos(inorder, instart, inend, preorder, prestart);
-		root.left = myBuildTree(inorder, instart, inend-1, preorder, prestart+1, prestart+rootPosition-instart);
+		root.left = myBuildTree(inorder, instart, rootPosition-1, preorder, prestart+1, prestart+rootPosition-instart);
 		root.right = myBuildTree(inorder, rootPosition+1, inend, preorder, rootPosition-inend+preend + 1, preend);
 		return root;
 	} 
