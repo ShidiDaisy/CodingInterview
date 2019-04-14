@@ -28,5 +28,9 @@
 
 ![Postorder Tree Traversal](https://i2.wp.com/www.techiedelight.com/wp-content/uploads/Postorder-Traversal.png?resize=355%2C436&ssl=1)
 
+## Sort
+### Topological Sort
+A topological sort of a directed graph is a linear order of its vertices such that for every directed edge uv from  vertex u to v. A topological sort is possible if and only if the graph is DAG.
+
 
 
