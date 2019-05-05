@@ -1,4 +1,4 @@
-
+package Tree;
 public class ConstructBinaryTreeInorderPostorder {
     /*Given inorder and postorder traversal of a tree, construct the binary tree.
     * Example 1:

@@ -24,4 +24,6 @@
 /.project
 /test.java
 *.class
-.idea/
+/.idea
+*.iml
+/out

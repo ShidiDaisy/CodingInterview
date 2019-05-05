@@ -31,5 +31,10 @@
 ## Set
 1. [Union Find Algorithm](https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/) 
 
+## Sort
+### Topological Sort
+A topological sort of a directed graph is a linear order of its vertices such that for every directed edge uv from  vertex u to v. A topological sort is possible if and only if the graph is DAG.
+
+
 
 
