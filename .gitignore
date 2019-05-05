@@ -24,3 +24,4 @@
 /.project
 /test.java
 *.class
+.idea/
