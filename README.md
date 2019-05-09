@@ -6,8 +6,8 @@
  4. [Kruskal's Algorithm for finding Minimum Spanning Tree](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)
  	* A minimum spanning tree is a spanning tree of connected, undirected graph. It connects all vertices together with minimal total weighting for its edges.
  	* The minimum spanning tree of this graph
-![Graph](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)
-![Minimum Spanning Tree](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)
+![Graph](https://i0.wp.com/www.techiedelight.com/wp-content/uploads/2016/11/Kruskal-1.png?resize=467%2C300&ssl=1)
+![Minimum Spanning Tree](https://i1.wp.com/www.techiedelight.com/wp-content/uploads/2016/11/Kruskal-12.png?resize=458%2C284&ssl=1)
 	* Greedy Algorithm
 
 
