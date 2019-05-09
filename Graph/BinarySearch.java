@@ -1,4 +1,4 @@
-package Search;
+package Graph;
 /*Perform search in ascending sequence
  *  Example:
  * Input:

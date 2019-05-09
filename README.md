@@ -1,8 +1,15 @@
 # Coding Interview
-## Search
+## Graph
  1. [Shortest path in a Maze | Lee Algorithm](https://www.techiedelight.com/lee-algorithm-shortest-path-in-a-maze/)
  2. [Flood Fill Algorithm](https://www.techiedelight.com/flood-fill-algorithm/)
  3. [Floyd's Cycle Detection/Detect Cycle in a LinkedList](https://www.techiedelight.com/detect-cycle-linked-list-floyds-cycle-detection-algorithm/)
+ 4. [Kruskal's Algorithm for finding Minimum Spanning Tree]https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)
+ 	* A minimum spanning tree is a spanning tree of connected, undirected graph. It connects all vertices together with minimal total weighting for its edges.
+ 	* The minimum spanning tree of this graph
+![Graph](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)
+![Minimum Spanning Tree](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)
+	* Greedy Algorithm
+
 
 ## Sequence
  1. [Longest Increasing Subsequence using DP](https://www.techiedelight.com/longest-increasing-subsequence-using-dynamic-programming/) 

@@ -1,4 +1,4 @@
-package Search;
+package Graph;
 
 import java.util.ArrayList;
 import java.util.Arrays;
