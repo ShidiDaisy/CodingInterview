@@ -9,6 +9,13 @@
 ![Graph](https://i0.wp.com/www.techiedelight.com/wp-content/uploads/2016/11/Kruskal-1.png?resize=467%2C300&ssl=1)
 ![Minimum Spanning Tree](https://i1.wp.com/www.techiedelight.com/wp-content/uploads/2016/11/Kruskal-12.png?resize=458%2C284&ssl=1)
 	* Greedy Algorithm
+ 5. [Dijkstra's Algorithm] (https://www.techiedelight.com/single-source-shortest-paths-dijkstras-algorithm/)
+ 	* Single Source Shortest Paths
+ 	* Given a source vertex s in a weighted graph where all its edges are non-negative, find the shortest-path weights d(s,v) from s to every vertices v in the graph
+ 	* For example, path from vertex A to B has min cost of 4 and the route is A->E->B
+ 	![Dijkstra's Algorithm](https://i0.wp.com/www.techiedelight.com/wp-content/uploads/2016/11/Dijkstras-7.png?resize=548%2C387&ssl=1)
+ 	* A variant of BFS in weighted graph
+ 	
 
 
 ## Sequence
@@ -41,6 +48,9 @@
 ## Sort
 ### Topological Sort
 A topological sort of a directed graph is a linear order of its vertices such that for every directed edge uv from  vertex u to v. A topological sort is possible if and only if the graph is DAG.
+
+# Reference
+Techie Delight (https://www.techiedelight.com/top-algorithms-data-structures-concepts-computer-science/)
 
 
 

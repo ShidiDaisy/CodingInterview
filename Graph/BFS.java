@@ -16,6 +16,7 @@ class Edge {
 }
 
 class Graph{
+	//undirected graph
 	//adjacency list
 	List<List<Integer>> adjList = null;
 	

@@ -18,7 +18,8 @@ import java.util.Queue;
  * and mark them as visited
  * 3. If all the nodes in the queue is processed and destination is not reached, then return false
  * */
-class Node{
+class Node
+{
 	int x, y, dist;
 	Node(int x, int y, int dist){
 		this.x = x;
