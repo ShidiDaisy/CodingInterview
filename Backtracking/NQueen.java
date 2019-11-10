@@ -22,8 +22,7 @@ Output: [
 Explanation: There exist two distinct solutions to the 4-queens puzzle as shown above.
 
  */
-package Backtracing;
-import java.util.AbstractList;
+package Backtracking;
 import java.util.ArrayList;
 import java.util.List;
 class NQueen {

@@ -9,6 +9,7 @@ public class isPrime {
 		int num = sc.nextInt();
 		isPrime sol = new isPrime();
 		System.out.println(sol.isPrime(num));
+		System.out.println(sol.isPrime2(num));
 	}
 	
 	public boolean isPrime(int num){
@@ -22,5 +23,18 @@ public class isPrime {
 			}
 			return true;
 		}
+	}
+
+	public boolean isPrime2(int num){
+		if(num < 2){
+			return false;
+		}else{
+			for(int i=2; i < num/2; i++){
+				if(num%i == 0){
+					return false;
+				}
+			}
+		}
+		return true;
 	}
 }
