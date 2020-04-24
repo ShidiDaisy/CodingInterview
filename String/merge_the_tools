@@ -1,0 +1,18 @@
+# https://www.hackerrank.com/challenges/merge-the-tools/problem
+# We can split a string s into n/k subsegments where each subsegment, t, consists of a contiguous block of k characters in s. Then, use each t
+# to create string u such that:
+#
+# The characters in u are a subsequence of the characters in t.
+# Any repeat occurrence of a character is removed from the string such that each character in u occurs exactly once.
+
+def merge_the_tools(string, k):
+    for i in range(0, len(string), k):
+        t = string[i:i+k]
+        sub = ""
+        for c in t:
+            if c not in sub:
+                sub += c;
+        print(sub)
+
+if __name__ == '__main__':
+    merge_the_tools("AABCAAADA", 3)

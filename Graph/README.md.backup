@@ -18,5 +18,5 @@
 	* Edge weight w(u, v) can be negative.
 	* Return the shortest path weight(s, v) from every sources s to every vertices v, including negative weight path.
 	* With no negative cycle.
-	* **It does so by comparing all possible paths through the graph between each pair of vertices**
+	* **It **
 ![](https://www.techiedelight.com/wp-content/uploads/Floyd-Warshall-Algorithm.png)
