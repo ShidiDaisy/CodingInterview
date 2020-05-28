@@ -11,7 +11,7 @@ public class MaxSubarray {
 	public static void main(String[] args) {
 		int[] A = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
 		int[] B = {-8, -3, -6, -2, -5, -4};
-		System.out.println(kadane(B));
+		System.out.println(kadane(A));
 	}
 	
 	public static int kadane(int[] A) {
