@@ -1,0 +1,38 @@
+# https://www.hackerrank.com/challenges/class-2-find-the-torsional-angle/problem?h_r=next-challenge&h_v=zen
+# Find the angle between two plane, given the coordinates of the three points of each plan.
+# Cosine similarity
+
+import math
+
+
+class Points(object):
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def __sub__(self, other):
+        return Points(self.x - other.x, self.y - other.y, self.z - other.z)
+
+    def dot(self, other):
+        return self.x * other.x + self.y * other.y + self.z * other.z
+
+    def cross(self, other):
+        return Points(self.y * other.z - self.z * other.y, self.z * other.x - self.x * other.z, self.x * other.y - self.y * other.x)
+
+    def absolute(self):
+        return pow((self.x ** 2 + self.y ** 2 + self.z ** 2), 0.5)
+
+
+if __name__ == '__main__':
+    points = list()
+    for i in range(4):
+        a = list(map(float, input().split()))
+        points.append(a)
+
+    a, b, c, d = Points(*points[0]), Points(*points[1]), Points(*points[2]), Points(*points[3])
+    x = (b - a).cross(c - b)
+    y = (c - b).cross(d - c)
+    angle = math.acos(x.dot(y) / (x.absolute() * y.absolute()))
+
+    print("%.2f" % math.degrees(angle))
