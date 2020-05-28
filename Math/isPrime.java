@@ -1,7 +1,7 @@
 package Math;
 import java.util.Scanner;
 
-
+/* Check whether the number n can be divided by any number between 2 to n/2*/
 public class isPrime {
 
 	public static void main(String[] args) {
