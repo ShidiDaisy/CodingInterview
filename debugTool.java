@@ -3,20 +3,18 @@ import java.util.Scanner;
 
 public class debugTool {
 
-	public static void main(String[] args) {
-		System.out.print(countNum());
-
-	}
-
-	public static int countNum(){
-		Scanner in = new Scanner(System.in);
-		
-		int a=0;
-		while(in.hasNext()){
-			a++;
+	public static void main(String[] args){
+		try{
+			System.out.println("A");
+			badMethod();
+			System.out.println("B");
+		}catch(Exception ex){
+			System.out.println("C");
+		}finally{
+			System.out.println("D");
 		}
-		
-		return a;
-		
+	}
+	public static void badMethod(){
+		throw new Error();
 	}
 }
