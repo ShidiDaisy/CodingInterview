@@ -1,5 +1,7 @@
 # Coding Interview
-
+## Array
+ 1. [Three Sum](https://leetcode.com/problems/3sum/)
+    * [三数之和（排序+双指针，易懂图解）](https://leetcode-cn.com/problems/3sum/solution/3sumpai-xu-shuang-zhi-zhen-yi-dong-by-jyd/)
 ## Sequence
  1. [Longest Increasing Subsequence using DP](https://www.techiedelight.com/longest-increasing-subsequence-using-dynamic-programming/) 
 

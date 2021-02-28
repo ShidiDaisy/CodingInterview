@@ -2,12 +2,38 @@ package Stack;
 
 import java.util.Stack;
 
-/*实现一个带有取最小值min方法的栈，min方法将返回当前栈中的最小值。
-你实现的栈将支持push，pop 和 min 操作，所有操作要求都在O(1)时间内完成。
+/* Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+push(x) -- Push element x onto stack.
+pop() -- Removes the element on top of the stack.
+top() -- Get the top element.
+getMin() -- Retrieve the minimum element in the stack.
+
+
+Example 1:
+
+Input
+["MinStack","push","push","push","getMin","pop","top","getMin"]
+[[],[-2],[0],[-3],[],[],[],[]]
+
+Output
+[null,null,null,null,-3,null,0,-2]
+
+Explanation
+MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin(); // return -3
+minStack.pop();
+minStack.top();    // return 0
+minStack.getMin(); // return -2
 
 HINT:
 Keep the min in a minStack
 https://www.jiuzhang.com/solution/min-stack/
+https://leetcode.com/problems/min-stack/
+
  * */
 public class MinStack {
 	private Stack<Integer> stack;
