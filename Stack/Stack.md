@@ -4,7 +4,7 @@
 
 ## Questions
 ### Valid Parentheses
-* Amazon, JP Morgan 常考题
+* Amazon, JP Morgan, SEA (Front End Engineer) 常考题
 
 ### [Min Stack](https://leetcode.com/problems/min-stack/)
 * Design a stack that supports retrieving the minimum element in constant time.
@@ -35,4 +35,17 @@ Use two pointer
         
 #### Stack
 * O(n) time
-
+* When iterate from left side, use a stack to store the height that visited.
+    * The elements in the stack is arranged from small to large,  that we can determine the left bound.
+    * Pop -1 as the bottom element in stack
+* For every element i in the heights array, check whether it is larger that the top element in the stack
+    * The first element on the right side that is smaller than i, is the right bound
+    * If it is larger than the top element, push it into the stack. (Haven't found the right bound yet. Keep moving.)
+    * Else: (Found the right bound for the top element in the stack, repeat until no more element in the stack is larger
+      than the current element)
+        * Process the top element in the stack
+        * Right bound: Current traversed element stack.pop()
+        * Left bound: The next element under the top element
+        * Area = rightBound * (indexOfCurrentElement - indexOfLeftBound - 1)
+        * Update the MaxArea
+    * Process the rest elements in the stack
