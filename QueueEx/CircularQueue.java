@@ -1,4 +1,4 @@
-package Queue;
+package QueueEx;
 /*Implement queue by circulant array. You need to support the following methods:
 
 CircularQueue(n): initialize a circular array with size n to store elements
